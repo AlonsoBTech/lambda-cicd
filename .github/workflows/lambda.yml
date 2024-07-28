@@ -12,13 +12,13 @@ jobs:
   deploy-lambda: # Name of our job
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 
+      - name: Checkout Code 
         uses: actions/checkout@v2
 
       - name: Set Up Python # Set up our python env
         uses: actions/setup-python@v2
         with:
-          python-version: '3.12'
+          python-version: "3.12"
       
       - name: Install Dependencies # Install any packages
         run: |
