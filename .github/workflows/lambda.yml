@@ -5,14 +5,12 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'lambda/'
 
 jobs:
   deploy-lambda: # Name of our job
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Latest runner version
     steps:
-      - name: Checkout Code 
+      - name: Checkout Code # Checking out the code
         uses: actions/checkout@v2
 
       - name: Set Up Python # Set up our python env
