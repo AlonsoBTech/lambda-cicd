@@ -1,4 +1,4 @@
-# Lambda CICD Github Actions
+# Lambda CICD Github Actions Workflow
 name: Deploy AWS Lambda
 
 on:
